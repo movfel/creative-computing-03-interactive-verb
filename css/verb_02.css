@@ -10,20 +10,76 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: auto;
-  width: auto;
+  font-family: 'Lato', sans-serif;
+  display: flex;
 }
 
 .content {
   height: 100%;
+  min-height: 100vh;
   width: 100%;
+  padding: 20px;
+  background: white;
+  /*position: absolute;*/
+}
+
+.shape {
+  width: 200px;  
+  height: 200px;
+  border-radius: 50%;
+  background: #FF7676;
+  display: inline-block;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+
+  }
+  25% {
+    transform: scale(1.5);
+
+  }
+  50% {
+    transform: scale(1);
+
+  }
+  75% {
+    transform: scale(1.2);
+
+  }
+  100% {
+    transform: scale(1);
+
+  }
+}
+
+.variation-1 {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.variation-2 {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.variation-3 {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.variation-4 {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.variation-5 {
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }

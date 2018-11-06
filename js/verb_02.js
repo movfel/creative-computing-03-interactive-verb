@@ -1,23 +1,8 @@
-/*
-  Returns a random whole number between minimum value and maximum value
-
-  For example, calling randomNumber(0, 255);
-  will return a random whole number between 0 and 255.
-
-  Source: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
-*/
 function randomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/*
-  Returns a random floating point number between minimum value and maximum value
-
-  For example, calling randomFloat(0, 1);
-  will return a random floating between 0.0 and 1.0.
-
-  Source: https://stackoverflow.com/questions/9724404/random-floating-point-double-in-inclusive-range
-*/
+const now = new Date();
 function randomFloat (min, max) {
   var float = Math.random();
   var value;
@@ -30,4 +15,24 @@ function randomFloat (min, max) {
 
   return parseFloat(value.toFixed(2));
 }
-
+var shape = document.querySelector(".shape");
+var width = randomNumber(60, 200);
+var height = randomNumber(60, 200);
+var width1=randomNumber(60,200);
+var width2=randomNumber(60,200);
+var width3=randomNumber(60,200);
+var width4=randomNumber(60,200);
+shape.style.width = width + "px";
+shape.style.height = height + "px";
+var variation_2 = document.querySelector(".variation-2");
+variation_2.style.width=width1+"px";
+variation_2.style.height=height+"px";
+var variation_3 = document.querySelector(".variation-3");
+variation_3.style.width=width2+"px";
+variation_3.style.height=height+"px";	
+var variation_4 = document.querySelector(".variation-4");
+variation_4.style.width=width3+"px";
+variation_4.style.height=height+"px";	
+var variation_5 = document.querySelector(".variation-5");
+variation_5.style.width=width4+"px";
+variation_5.style.height=height+"px";	
